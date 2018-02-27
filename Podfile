@@ -8,6 +8,7 @@ target 'Instagram' do
     
     
     pod 'Parse'
+    
     post_install do |installer|
         installer.pods_project.targets.each do |target|
             target.build_configurations.each do |config|
@@ -15,6 +16,7 @@ target 'Instagram' do
             end
         end
     end
+    pod 'ParseUI'
 end
 #target 'Instagram' do
 # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
